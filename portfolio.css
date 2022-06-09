@@ -1,0 +1,269 @@
+body {
+    margin: 0 0;
+    font-family: 'Kanit';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+a{
+    text-decoration: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    height: fit-content;
+}
+
+.grid-container>div {
+    font-family: 'Kanit';
+}
+
+#header {
+    grid-column: 1;
+    /* background-color: #1794A0; */
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+    position: sticky;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 5px 30px 5px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header a{
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 0px 0px 50px;
+}
+.headermenu{
+    display: flex;
+    align-items: center;
+
+}
+
+#menu1 {
+    grid-column: 1;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#menu1 img {
+    width: 300px;
+    padding-top: 20px;
+}
+
+#menu2 {
+    grid-column: 1 / span 1;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 35px;
+
+}
+.curved.upper {
+    background: rgb(255, 255, 255);
+    
+}
+.curve{
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%); */
+    background-color: #000;
+} 
+.curved svg{
+    display: block;
+} 
+
+#menu2 span{
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px  white;
+}
+#menu2 img{
+    width: 150px;
+}
+
+.aboutme{
+    padding-left: 10%;
+    position: relative;
+    top: -50px;
+}
+.aboutme div{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+/* Skills------------------------------------ */
+.skills{
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 50px 0px 50px;
+    align-items: center;
+}
+#menu2 .skills img {
+    width: 200px;
+    padding-right: 50px;
+    
+}
+.skills-data{
+    text-align: right
+}
+.skills-data div{
+    line-height: 35px;
+}
+
+/* Hobby------------------------------- */
+.hobby{
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-start;
+    padding: 100px 50px 250px 50px;
+    align-items: center;
+}
+#menu2 .hobby img{
+    width: 250px;
+    padding-left: 50px;
+}
+
+#menu3 {
+    grid-column: 1 / span 1;
+    float: right;
+    font-size: 20px;
+    padding: 100px 50px 0px 30px;
+    text-align: right;
+    line-height: 30px;
+    background-color: #ffffff;
+    clip-path: polygon(0 90%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+    top: -90%;
+    line-height: 30px;
+}
+
+#menu3 img {
+    width: 150px;
+    padding-bottom: 30px;
+}
+
+#menu3 span {
+    font-size: 30px;
+    font-weight: bold;
+    
+
+}
+
+#menu3 a{
+    color: #000;
+}
+
+
+#end {
+    grid-column: 1 / span 1;
+    border: 2px solid black;
+    margin: 0px 30px 1% 30px;
+    padding: 5px 30px;
+    color: #000000;
+    font-size: 15px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#end a{
+    color: #000000;
+}
+
+
+
+
+
+/* resume */
+.resume{
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+    
+}
+
+.resume img{
+   width: 50%;
+   /* border: 5px solid black; */
+}
+
+/* work */
+
+
+.head{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+
+.img-container {
+    padding: 0 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+  }
+.img-container::-webkit-scrollbar {
+    display: none;
+  }
+.img-container img{
+    width: 100%;
+    
+}
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 100px;
+  }
+  
+.title{
+    /* padding: 0 10vw; */
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px 0px 20px 0px 0px;
+    text-transform: capitalize;
+  }
+  
+
+.product-img {
+    flex: 0 0 auto;
+    width: 400px;
+    height: auto;
+    margin: 0px 10px;
+}
+
+.button{
+    text-align: center;
+    padding: 10px 0;
+
+
+}
+.pre-btn,
+.nxt-btn {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background: none;
+    margin: 0 5px;
+  }
+
+
+  
