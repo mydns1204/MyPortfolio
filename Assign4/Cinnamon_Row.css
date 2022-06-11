@@ -1,0 +1,398 @@
+body {
+    background-color: #ECA97E;
+}
+
+/*Link*/
+div a{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+a:link{
+	color: #000000;
+}
+a:visited{
+	color: #508688;
+}
+a:hover{
+	color: #ffffff;
+}
+
+/*ย่อหน้า*/
+p{
+    text-indent: 30px;
+}
+
+/*Text*/
+h1{
+    text-align: center;
+    color: #ECA97E;
+    font-size: 35px;
+}
+h2{
+    color: black;
+    text-indent: 30px;
+    font-weight: normal;
+    font-size: 19px; 
+}
+
+ul{
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+/*flex-container*/
+/*main*/
+.main-flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-flex-container > div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    max-width: 250px;
+}
+ .main-flex-container img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+/*right photo*/
+#photo div {
+    display: grid;
+    place-items: center; 
+
+}
+.photo-flex-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+.photo-flex-container > div {
+    max-width: 200px;
+    padding-bottom: 100px; 
+}
+.photo-flex-container img{
+    width: 100%;
+    border-radius: 20px;
+    border: 7px solid #ECA97E ;
+}
+/*Step*/
+.step-left-flex-container {
+    display: flex;
+    background-color: #FFF8D7;
+    justify-content: center;
+    align-items: center;
+    max-width: 92%;
+    max-height: 10%;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+
+.step-left-flex-container img{
+
+    max-height: 200px; 
+    border: 6px solid #ECA97E ;
+    margin-left: auto;
+
+}
+.step-left-flex-container div {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.step-right-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFCEE;
+    max-width: 92%;
+    max-height: 10%;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.step-right-flex-container img{
+    max-height: 200px;
+    border: 6px solid #ECA97E ;
+    margin-right: auto;
+}
+.step-right-flex-container div{
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+/* Box หัวข้อ */
+.main-ingredient-step{
+    background: #ECA97E;
+    color: #FFFCEE;
+    width: 350px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-top: 50px;
+    padding: 10px;
+    text-align : center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*IMG Ingradiant*/
+.ingredient img{
+    float: right;
+    width: 20%;
+    min-width: 200px;
+    border-radius: 5px;
+    border: 7px solid #ECA97E ;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+/*Display*/
+
+/*Grid Container*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+.grid-container > div {
+    border: 1px solid #6d2a00 ;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+#header{
+    grid-column: 1 / span 3;
+}
+
+#menu{
+    grid-column: 1 / span 1;
+    background-color: #FFFCEE;
+}
+
+#main {
+    grid-column: 2 / span 1;
+    background-color: #FFF3B7;
+}
+
+#photo{
+    grid-column: 3 / span 1;
+    background-color: #FFF3B7;
+}
+
+#footer{
+    grid-column: 1 / span 3;
+}
+
+.text-header{
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFCEE;
+    padding: 2%;
+    text-align: center;
+}
+
+.menu-recipe{
+    font-weight: normal;
+    font-size: 20px;
+    color: #ECA97E;
+    text-align: left;
+    margin: 10px;
+}
+
+#footer div {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/*ipad*/
+@media only screen and (max-width: 1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+
+    #header{
+        grid-column: 1 / span 2;
+    }
+
+    #menu{
+        grid-column: 1 / span 2;
+    }
+    #menu div{
+        display: inline-block;
+    }
+
+    #main {
+        grid-column: 1 / span 1;
+    }
+
+    #photo{
+        grid-column: 2 / span 1;
+    }
+
+    #footer{
+        grid-column: 1 / span 2;
+    }
+
+    .text-header{
+        font-size: 30px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    ul{
+        font-size: 17px;
+    }
+
+    .main-ingredient-step{
+        font-size: 23px;
+        width: 300px;
+        border-radius: 25px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    h2{
+        font-size: 16px; 
+    }
+
+    .step-left-flex-container {
+        display: flex;
+        max-width: 98%;
+        margin-right: auto;
+    }
+    .step-right-flex-container {
+        display: flex;
+        max-width: 98%;
+        margin-left: auto;
+    }
+   .step-left-flex-container div {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .step-right-flex-container div{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+
+/*Phone*/
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto  ;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+
+    #menu{
+        grid-column: 1 / span 1;
+    }
+
+    #main {
+        grid-column: 1 / span 1;
+    }
+
+    #photo{
+        grid-column: 1 / span 1;
+    }
+
+    #footer{
+        grid-column: 1 / span 1;
+    }
+
+    .text-header{
+        font-size: 25px;
+        padding: 4%;
+    }
+    .menu-recipe{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .main-flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+    .main-flex-container > div{
+        max-width: 200px;
+    }
+
+    .ingredient img{
+        float: none;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        display: grid;
+        place-items: center;
+    }
+
+    .step-left-flex-container, .step-right-flex-container {
+    display: flex;
+    max-width: 100%;
+    }
+
+
+}
+
+
+
+
+/* .bg-step-left{
+    max-width: 1200px;
+    height: 212px;
+    background-color: #FFF8D7;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-left: 5%;
+    /* padding-right: 5%; 
+
+}
+.bg-step-right{
+    max-width: 1200px;
+    height: 212px;
+    background-color: #FFFCEE;
+    margin-left: auto;
+    margin-bottom: 30px;
+    /* padding-left: 5%; 
+    padding-right: 5%;
+}
+.img-step-left{
+  float: right;
+  height: 200px;
+  margin-left:30px;
+  border: 6px solid #ECA97E ;
+}
+
+.img-step-right{
+    float: left;
+    height: 200px;
+    margin-right:30px;
+    border: 6px solid #ECA97E ;
+} */
+

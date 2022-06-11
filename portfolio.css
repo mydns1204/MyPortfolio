@@ -5,240 +5,293 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
-a{
+a {
     text-decoration: none;
+    cursor: pointer;
 }
+button{
+    cursor: pointer;
+}
+
+.space{
+    margin: 150px 0;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto;
-    height: fit-content;
 }
 
 .grid-container>div {
     font-family: 'Kanit';
+    height: fit-content;
 }
 
 #header {
     grid-column: 1;
-    /* background-color: #1794A0; */
-    background-color: #ffffff;
-    border: 2px solid black;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    
     position: sticky;
     top: 0;
+    background-color: white;
     color: rgb(0, 0, 0);
     font-size: 40px;
-    padding: 5px 30px 5px 30px;
-
+    padding: 0  30px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 
-#header a{
-    color: #000000;
-    font-size: 25px;
-    padding: 0px 0px 0px 50px;
+.header{
+    background-color: rgb(0, 0, 0);
+    padding: 0 30px 0 30px;
+    color: white;
+    border-bottom-right-radius: 10px;
+    letter-spacing: 3px;
+    font-weight: 300;
 }
-.headermenu{
+.headermenu {
     display: flex;
     align-items: center;
-
+    background-color: white;
 }
 
-#menu1 {
+.headermenu a{
+    margin: 0 10px;
+    color: #000000;
+    font-size: 20px;
+    padding: 0px 10px;
+    position: relative;
+    top: -4px;
+}
+.headermenu div:hover a{
+    color: white;
+} 
+.headermenu div:hover {
+   background: #000000;
+}
+
+/* main 1  */
+#main1 {
     grid-column: 1;
     font-size: 40px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 100px 0 0px 0;
+    z-index: 1;
 }
-
-#menu1 img {
+#main1 img {
     width: 300px;
     padding-top: 20px;
 }
 
-#menu2 {
+/* main 2 */
+#main2 {
     grid-column: 1 / span 1;
     padding: 0px 0px 0px 0px;
-    font-size: 20px;
+    font-size: 23px;
     color: #ffffff;
     line-height: 35px;
-
+    position: relative;
+    top: -200px;
+    height: 1900px;
 }
+
 .curved.upper {
     background: rgb(255, 255, 255);
-    
 }
-.curve{
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%); */
-    background-color: #000;
-} 
-.curved svg{
-    display: block;
-} 
-
-#menu2 span{
-    font-size: 45px;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px  white;
+.curve {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%); 
+    background-color: rgb(49, 49, 49);
 }
-#menu2 img{
-    width: 150px;
-}
-
-.aboutme{
-    padding-left: 10%;
+ .curved{
     position: relative;
-    top: -50px;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
-.aboutme div{
+.curved svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 500px;
+}
+.shape-fill {
+    fill: rgb(49, 49, 49);
+}
+
+#main2 span {
+    font-size: 35px;
+    font-weight: bold;
+    /* text-shadow: 2px 2px 3px white; */
+    letter-spacing: 2px;
+}
+/* about me------------------------------------ */
+.aboutme {
+    padding: 0 50px 0 100px ;
+}
+
+.aboutme div {
     padding-top: 30px;
-    padding-left: 20px;
+    letter-spacing: 3px;  
 }
 
 /* Skills------------------------------------ */
-.skills{
+.skills {
     vertical-align: middle;
     display: flex;
     justify-content: flex-end;
-    padding: 100px 50px 0px 50px;
+    padding: 100px 100px 0px 100px;
     align-items: center;
 }
-#menu2 .skills img {
-    width: 200px;
-    padding-right: 50px;
-    
+
+#main2 .skills img {
+    width: 250px;
+    padding-left: 100px;
 }
-.skills-data{
-    text-align: right
+
+.skills-data {
+    text-align: right;
 }
-.skills-data div{
+
+.skills-data div {
     line-height: 35px;
+    padding-top: 30px;
+    letter-spacing: 3px;
 }
 
 /* Hobby------------------------------- */
-.hobby{
+.hobby {
     vertical-align: middle;
     display: flex;
     justify-content: flex-start;
-    padding: 100px 50px 250px 50px;
+    padding: 50px 50px 250px 100px;
     align-items: center;
 }
-#menu2 .hobby img{
-    width: 250px;
-    padding-left: 50px;
+.hobby div {
+    padding-top: 30px;
+    letter-spacing: 3px;
 }
 
-#menu3 {
+#main2 .hobby img {
+    width: 280px;
+    padding-left: 100px;
+}
+
+/* contact------------------------------------ */
+.contact {
     grid-column: 1 / span 1;
     float: right;
-    font-size: 20px;
+    font-size: 25px;
     padding: 100px 50px 0px 30px;
     text-align: right;
     line-height: 30px;
-    background-color: #ffffff;
-    clip-path: polygon(0 90%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
-    top: -90%;
-    line-height: 30px;
+    top: -450px;
+    line-height: 35px;
+    z-index: -1;
+    color: #000;
+    height: fit-content;
 }
-
-#menu3 img {
+.contact div{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+.contact img {
     width: 150px;
-    padding-bottom: 30px;
+    padding: 20px 0 30px 0;
 }
 
-#menu3 span {
-    font-size: 30px;
+#main2 .contact span {
+    font-size: 35px;
     font-weight: bold;
-    
-
 }
 
-#menu3 a{
+.contact a {
     color: #000;
 }
+.contact a:hover {
+    font-weight: 500;
+}
 
+/* END */
+#end a:hover {
+    font-weight: 500;
+}
 
 #end {
     grid-column: 1 / span 1;
     border: 2px solid black;
-    margin: 0px 30px 1% 30px;
+    margin: 0px 30px 10px 30px;
     padding: 5px 30px;
     color: #000000;
     font-size: 15px;
-
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    
 }
-#end a{
+
+#end a {
     color: #000000;
 }
 
-
-
-
-
 /* resume */
-.resume{
+.resume {
     text-align: center;
     margin: 0px 0px 50px 0px;
-    
 }
 
-.resume img{
-   width: 50%;
-   /* border: 5px solid black; */
+.resume img {
+    width: 50%;
 }
 
 /* work */
-
-
-.head{
+.head {
     font-size: 50px;
     letter-spacing: 5px;
     font-weight: bold;
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    margin: 45px 0px 45px 0px;
 }
 
-
-.img-container {
-    padding: 0 0;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    align-items: center;
-  }
-.img-container::-webkit-scrollbar {
-    display: none;
-  }
-.img-container img{
-    width: 100%;
-    
-}
 .product {
     position: relative;
     overflow: hidden;
     padding: 0px 100px;
-  }
-  
-.title{
+}
+
+.title {
     /* padding: 0 10vw; */
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     margin: 0px 0px 20px 0px 0px;
-    text-transform: capitalize;
-  }
-  
+    
+}
+
+.title span {
+    font-weight: 300;
+    font-size: 30px;
+
+}
+
+.img-container {
+    padding: 0 0x;
+    margin: 0 50px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+.img-container::-webkit-scrollbar {
+    display: none;
+}
+
+.img-container img {
+    width: 100%;
+}
 
 .product-img {
     flex: 0 0 auto;
@@ -247,23 +300,104 @@ a{
     margin: 0px 10px;
 }
 
-.button{
+.button {
     text-align: center;
-    padding: 10px 0;
-
-
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
 }
+
 .pre-btn,
 .nxt-btn {
     border: 2px solid #000;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     background: none;
     margin: 0 5px;
-  }
+}
 
+.pre-btn:hover {
+    background-color: black;
+    color: white;
+}
 
-  
+.nxt-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.block-assign {
+    padding: 20px 15px 30px 15px;
+    border: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.block-assign img {
+    padding-top: 15px;
+}
+.block-assign span{
+    font-weight: 400;
+}
+.click {
+    margin-top: 15px;
+}
+
+.click a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid black;
+}
+
+.click a:hover {
+
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+video{
+    width: 350px;
+    height: 270px;
+}
+
+.nonclick {
+    visibility: hidden;
+}
+
+.other-image img{
+    width: 80%;
+     text-align: center;
+}
+
+.image-img {
+    flex: 0 0 auto;
+    margin: 0px 10px;
+}
+.image-img img{
+    height: 500px ;
+    align-items: center;
+}
+.image-img div{
+    display: flex;
+    align-items: center;
+}
+
+.box-img{
+    border: 2px solid black;
+    padding: 15px 0;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+}
