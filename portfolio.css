@@ -24,7 +24,6 @@ button{
 
 .grid-container>div {
     font-family: 'Kanit';
-    height: fit-content;
 }
 
 #header {
@@ -39,15 +38,18 @@ button{
     flex-direction: row;
     justify-content: space-between;
     z-index: 100;
+    
+    box-shadow: 0 5px 10px rgb(202, 202, 202) ;
 }
 
 .header{
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     padding: 0 30px 0 30px;
-    color: white;
-    border-bottom-right-radius: 10px;
-    letter-spacing: 3px;
-    font-weight: 300;
+    color: rgb(0, 0, 0);
+    /* border-bottom-right-radius: 10px;
+    border-bottom: 3px solid black; */
+    letter-spacing: 5px;
+    font-weight: 400;
 }
 .headermenu {
     display: flex;
@@ -58,7 +60,7 @@ button{
 .headermenu a{
     margin: 0 10px;
     color: #000000;
-    font-size: 20px;
+    font-size: 22px;
     padding: 0px 10px;
     position: relative;
     top: -4px;
@@ -73,14 +75,22 @@ button{
 /* main 1  */
 #main1 {
     grid-column: 1;
-    font-size: 40px;
     text-align: center;
     padding: 100px 0 0px 0;
     z-index: 1;
 }
+#main1 span{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+
+}
+
 #main1 img {
-    width: 300px;
-    padding-top: 20px;
+    width: 550px;
+    margin-top: 50px;
+    /* padding-top: 20px; */
+    border-radius: 30px 300px 30px 100px ;
 }
 
 /* main 2 */
