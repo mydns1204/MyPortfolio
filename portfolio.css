@@ -544,8 +544,11 @@ video {
         height: 320px;
     }
 
+    .button {
+        display: none;
+    }
     .product {
-        padding: 0px 50px;
+        padding: 0px 40px 20px;
     }
 
     .title {
@@ -585,13 +588,6 @@ video {
         width: 280px;
     }
     
-    .pre-btn,
-    .nxt-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
-
     #header {
         font-size: 38px;
         padding: 0 25px 0 0;
@@ -668,7 +664,6 @@ video {
         width: 720px;
     }
 }
-
 @media only screen and (max-width: 768px) {
     #header {
         font-size: 35px;
@@ -685,9 +680,6 @@ video {
         margin: 40px 0;
     }
 
-    .product {
-        padding: 0px 40px 20px;
-    }
 
     .title {
         font-size: 25px;
@@ -703,10 +695,6 @@ video {
 
     .image-img div img {
         height: 250px;
-    }
-
-    .button {
-        display: none;
     }
 
     .pre-btn,
@@ -830,7 +818,7 @@ video {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 479px),(max-width: 425px) {
     #header {
         font-size: 23px;
     }
@@ -928,7 +916,7 @@ video {
     }
     .contact div {
         padding-top: 5px;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         line-height: 22px;
         font-size: 15px;
     }
@@ -1001,7 +989,7 @@ video {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) , (max-device-width: 414px) {
     #header {
         font-size: 20px;
         padding-right: 10px;
@@ -1015,6 +1003,29 @@ video {
         margin: 0 4px;
         position: relative;
         top: -2px;
+    }
+    #main1 img {
+        width: 260px;
+        margin-top: 30px;
+        border-radius: 30px 120px 30px 100px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #header {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .header {
+        padding: 0 0px 0 10px;
+        letter-spacing: normal;
+        font-size: 18px;
+    }
+    .headermenu a {
+        margin: 0 3px;
+        position: relative;
+        top: -2px;
+        font-size: 13px;
     }
     #main1 img {
         width: 260px;
