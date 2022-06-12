@@ -989,7 +989,7 @@ video {
 
 }
 
-@media only screen and (max-width: 375px) , (max-device-width: 414px) {
+@media only screen and (max-width: 414px) {
     #header {
         font-size: 20px;
         padding-right: 10px;
