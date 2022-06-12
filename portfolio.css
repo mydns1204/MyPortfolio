@@ -534,6 +534,14 @@ video {
         margin: 30px 0px 0px 0px;
     }
 }
+@media only screen and (max-width: 1366px){
+    .button {
+        display: none;
+    }
+    .product {
+        padding: 0px 40px 20px;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     #main1 img {
@@ -542,13 +550,6 @@ video {
 
     .image-img div img {
         height: 320px;
-    }
-
-    .button {
-        display: none;
-    }
-    .product {
-        padding: 0px 40px 20px;
     }
 
     .title {
