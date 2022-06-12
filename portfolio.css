@@ -9,11 +9,12 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-.space{
+.space {
     margin: 150px 0;
 }
 
@@ -33,16 +34,15 @@ button{
     background-color: white;
     color: rgb(0, 0, 0);
     font-size: 40px;
-    padding: 0  30px 0 0;
+    padding: 0 30px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 100;
-    
-    box-shadow: 0 5px 10px rgb(202, 202, 202) ;
+    box-shadow: 0 5px 10px rgb(202, 202, 202);
 }
 
-.header{
+.header {
     /* background-color: rgb(0, 0, 0); */
     padding: 0 30px 0 30px;
     color: rgb(0, 0, 0);
@@ -51,13 +51,14 @@ button{
     letter-spacing: 5px;
     font-weight: 400;
 }
+
 .headermenu {
     display: flex;
     align-items: center;
     background-color: white;
 }
 
-.headermenu a{
+.headermenu a {
     margin: 0 10px;
     color: #000000;
     font-size: 22px;
@@ -65,11 +66,13 @@ button{
     position: relative;
     top: -4px;
 }
-.headermenu div:hover a{
+
+.headermenu div:hover a {
     color: white;
-} 
+}
+
 .headermenu div:hover {
-   background: #000000;
+    background: #000000;
 }
 
 /* main 1  */
@@ -79,7 +82,8 @@ button{
     padding: 100px 0 0px 0;
     z-index: 1;
 }
-#main1 span{
+
+#main1 span {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 3.5px;
@@ -90,9 +94,10 @@ button{
     width: 550px;
     margin-top: 50px;
     /* padding-top: 20px; */
-    border-radius: 30px 200px 30px 100px ;
+    border-radius: 30px 200px 30px 100px;
     box-shadow: 15px 10px rgb(49, 49, 49);
 }
+
 /* #main1 div img {
 
     box-shadow: 5px 5px black;
@@ -110,14 +115,13 @@ button{
     height: 1900px;
 }
 
-.curved.upper {
-    background: rgb(255, 255, 255);
-}
+
 .curve {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
     background-color: rgb(49, 49, 49);
 }
- .curved{
+
+.curved {
     position: relative;
     bottom: -10px;
     left: 0;
@@ -125,12 +129,14 @@ button{
     overflow: hidden;
     line-height: 0;
 }
+
 .curved svg {
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
     height: 500px;
 }
+
 .shape-fill {
     fill: rgb(49, 49, 49);
 }
@@ -141,14 +147,15 @@ button{
     /* text-shadow: 2px 2px 3px white; */
     letter-spacing: 2px;
 }
+
 /* about me------------------------------------ */
 .aboutme {
-    padding: 0 50px 0 100px ;
+    padding: 0 100px 0 100px;
 }
 
 .aboutme div {
     padding-top: 30px;
-    letter-spacing: 3px;  
+    letter-spacing: 3px;
 }
 
 /* Skills------------------------------------ */
@@ -183,6 +190,7 @@ button{
     padding: 50px 50px 250px 100px;
     align-items: center;
 }
+
 .hobby div {
     padding-top: 30px;
     letter-spacing: 3px;
@@ -197,22 +205,23 @@ button{
 .contact {
     grid-column: 1 / span 1;
     float: right;
-    font-size: 25px;
     padding: 100px 50px 0px 30px;
     text-align: right;
-    line-height: 30px;
     position: relative;
     top: -450px;
     line-height: 35px;
-    z-index: -1;
+    z-index: 1;
     color: #000;
     height: fit-content;
+    z-index: -1;
 }
-.contact div{
+
+.contact div {
     padding-top: 20px;
     letter-spacing: 1px;
     font-size: 23px;
 }
+
 .contact img {
     width: 150px;
     padding: 20px 0 30px 0;
@@ -226,6 +235,7 @@ button{
 .contact a {
     color: #000;
 }
+
 .contact a:hover {
     font-weight: 500;
 }
@@ -278,11 +288,10 @@ button{
 }
 
 .title {
-    /* padding: 0 10vw; */
     font-size: 35px;
     font-weight: 500;
     margin: 0px 0px 20px 0px 0px;
-    
+
 }
 
 .title span {
@@ -292,7 +301,6 @@ button{
 }
 
 .img-container {
-    padding: 0 0x;
     margin: 0 50px;
     display: flex;
     overflow-x: auto;
@@ -305,12 +313,12 @@ button{
 }
 
 .img-container img {
-    width: 100%;
+    width: 480px;
 }
 
 .product-img {
     flex: 0 0 auto;
-    width: 400px;
+    width: fit-content;
     height: auto;
     margin: 0px 10px;
 }
@@ -353,14 +361,18 @@ button{
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
+    width: fit-content;
+
 }
 
 .block-assign img {
     padding-top: 15px;
 }
-.block-assign span{
+
+.block-assign span {
     font-weight: 400;
 }
+
 .click {
     margin-top: 15px;
 }
@@ -376,13 +388,12 @@ button{
 }
 
 .click a:hover {
-
     border: 1px solid black;
     background-color: black;
     color: white;
 }
 
-video{
+video {
     width: 350px;
     height: 270px;
 }
@@ -391,28 +402,614 @@ video{
     visibility: hidden;
 }
 
-.other-image img{
-    width: 80%;
-     text-align: center;
+.other-image img {
+    width: 360px;
+    text-align: center;
+
 }
 
 .image-img {
     flex: 0 0 auto;
     margin: 0px 10px;
 }
-.image-img img{
-    height: 500px ;
+
+.image-img div img {
+    height: 500px;
     align-items: center;
+    width: fit-content;
+
 }
-.image-img div{
+
+.image-img img {
+    height: 100%;
+}
+
+.image-img div {
     display: flex;
     align-items: center;
 }
 
-.box-img{
+.box-img {
     border: 2px solid black;
     padding: 15px 0;
     align-items: center;
     border-left: none;
     border-right: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .product {
+        padding: 0px 80px;
+    }
+
+    .img-container {
+        margin: 0 45px;
+    }
+    .img-container img {
+        width: 420px;
+    }
+
+    .button {
+        padding: 20px 45px;
+    }
+
+    .image-img div img {
+        height: 390px;
+    }
+
+    .other-image img {
+        width: 320px;
+    }
+
+    #main2 span {
+        font-size: 33px;
+    }
+
+    #main2 {
+        font-size: 20px;
+        height: 1700px;
+    }
+
+    .aboutme {
+        padding: 0 100px 0 100px;
+    }
+
+    .aboutme div {
+        padding: 20px 0 0 0;
+        letter-spacing: 2.5px;
+    }
+
+    .skills {
+        padding: 80px 100px 0px 100px;
+    }
+
+    #main2 .skills img {
+        width: 220px;
+        padding-left: 80px;
+    }
+
+    .skills-data {
+        text-align: right;
+    }
+
+    .skills-data div {
+        padding-top: 20px;
+        letter-spacing: 2.5px;
+    }
+
+    .hobby {
+        padding: 50px 50px 225px 100px;
+    }
+
+    .hobby div {
+        padding-top: 20px;
+        letter-spacing: 2.5px;
+    }
+
+    #main1 img {
+        width: 525px;
+    }
+
+    #main2 .hobby img {
+        width: 225px;
+        padding-left: 80px;
+    }
+
+    .contact {
+        font-size: 25px;
+        padding: 100px 50px 0px 30px;
+        position: relative;
+        top: -410px;
+    }
+
+    #main2 .contact span {
+        font-size: 33px;
+    }
+
+    .contact div {
+        font-size: 20px;
+    }
+
+    .resume {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #main1 img {
+        width: 500px;
+    }
+
+    .image-img div img {
+        height: 320px;
+    }
+
+    .product {
+        padding: 0px 50px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .title span {
+        font-size: 28px;
+    }
+
+
+    .block-assign {
+        font-size: 18px;
+    }
+
+    .click a {
+        padding: 5px 18px;
+        font-size: 13px;
+    }
+
+    video {
+        width: 300px;
+        height: 220px;
+    }
+
+    .head {
+        font-size: 45px;
+    }
+
+    .img-container {
+        margin: 0 40px;
+    }
+    .img-container img {
+        width: 320px;
+    }
+    .other-image img {
+        width: 280px;
+    }
+    
+    .pre-btn,
+    .nxt-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #header {
+        font-size: 38px;
+        padding: 0 25px 0 0;
+    }
+
+    .headermenu a {
+        margin: 0 8px;
+        font-size: 20px;
+        padding: 0px 10px;
+        position: relative;
+        top: -4px;
+    }
+
+    #main2 {
+        height: 1600px;
+    }
+
+    #main2 span {
+        font-size: 33px;
+    }
+
+    .aboutme {
+        padding: 0 80px 0 80px;
+    }
+
+    .aboutme div {
+        padding: 18px 0 0 0;
+        line-height: 30px;
+    }
+
+    .skills {
+        padding: 65px 80px 0px 80px;
+    }
+
+    #main2 .skills img {
+        width: 190px;
+        padding-left: 65px;
+    }
+
+    .skills-data div {
+        padding-top: 18px;
+        line-height: 30px;
+    }
+
+    .hobby {
+        padding: 50px 50px 225px 80px;
+    }
+
+    .hobby div {
+        padding-top: 18px;
+        line-height: 30px;
+        letter-spacing: 2.5px;
+    }
+
+    #main2 .hobby img {
+        width: 190px;
+        padding-left: 65px;
+    }
+
+    .contact img {
+        width: 140px;
+        padding: 20px 0 20px 0;
+    }
+
+    #main2 .contact span {
+        font-size: 33px;
+    }
+
+    .contact div {
+        padding-top: 18px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        font-size: 35px;
+        padding: 0 25px 0 0;
+    }
+
+    .headermenu a {
+        font-size: 18px;
+        padding: 0px 5px;
+    }
+
+    .head {
+        font-size: 35px;
+        margin: 40px 0;
+    }
+
+    .product {
+        padding: 0px 40px 20px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .title span {
+        font-size: 25px;
+    }
+
+    .img-container {
+        margin: 0 20px;
+    }
+
+    .image-img div img {
+        height: 250px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .img-container img {
+        width: 280px;
+    }
+
+    .block-assign {
+        padding: 15px 10px 25px;
+        letter-spacing: 0.5px;
+    }
+
+    video {
+        width: 280px;
+    }
+
+    .other-image img {
+        width: 240px;
+    }
+
+    .space {
+        margin: 100px 0;
+    }
+
+    #main1 {
+        padding-top: 80px;
+    }
+
+    #main1 span {
+        font-size: 35px;
+    }
+
+    #main1 img {
+        width: 420px;
+        box-shadow: 10px 5px rgb(49, 49, 49);
+        margin-top: 40px;
+    }
+
+    .curved svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 450px;
+    }
+
+    #main2 {
+        height: 1500px;
+        font-size: 18px;
+    }
+
+    #main2 span {
+        font-size: 30px;
+    }
+
+    .aboutme {
+        padding: 0 60px 0 60px;
+    }
+
+    .aboutme div {
+        padding: 15px 0 0 0;
+        letter-spacing: 2px;
+        line-height: 26px;
+    }
+
+    .skills {
+        padding: 55px 70px 0px 60px;
+    }
+
+    #main2 .skills img {
+        width: 150px;
+        padding-left: 55px;
+    }
+
+    .skills-data div {
+        padding-top: 15px;
+        letter-spacing: 2px;
+        line-height: 26px;
+    }
+
+    .hobby {
+        padding: 50px 50px 190px 60px;
+    }
+
+    .hobby div {
+        padding-top: 15px;
+        line-height: 26px;
+        letter-spacing: 2px;
+    }
+
+    #main2 .hobby img {
+        width: 170px;
+        padding-left: 45px;
+    }
+
+    .contact {
+        position: relative;
+        top: -350px;
+    }
+
+    .contact img {
+        width: 130px;
+    }
+
+    #main2 .contact span {
+        font-size: 30px;
+    }
+
+    .contact div {
+        padding-top: 15px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #header {
+        font-size: 23px;
+    }
+    .header {
+        padding: 0 20px;
+        letter-spacing: 2.5px;
+        font-size: 23px;
+    }
+    .headermenu a {
+        font-size: 13px;
+        padding: 0px 0px;
+        margin: 0 5px;
+        position: relative;
+        top: -2px;
+    }
+    #main1 {
+        padding-top: 60px;
+    }
+    #main1 span {
+        font-size: 30px;
+        letter-spacing: 2.5px;
+    }
+    #main1 img {
+        width: 300px;
+        margin-top: 30px;
+        border-radius: 30px 150px 30px 100px;
+    }
+    .curved {
+        position: relative;
+        bottom: -35px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    .curved svg {
+        width: calc(300% + 1.3px);
+        height: 400px;
+    }
+    #main2 {
+        font-size: 15px;
+        height: 1150px;
+    }
+    #main2 span {
+        font-size: 25px;
+    }
+    .aboutme {
+        padding: 0 40px 0 30px;
+        position: relative;
+        top: -10px;
+    }
+    .aboutme div {
+        padding: 5px 0 0 0;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    .skills {
+        padding: 30px 30px 0px 40px;
+    }
+
+    #main2 .skills img {
+        width: 120px;
+        padding-left: 25px;
+    }
+
+    .skills-data div {
+        padding-top: 5px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    .hobby {
+        padding: 45px 40px 200px 40px;
+    }
+    .hobby div {
+        padding-top: 5px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    #main2 .hobby img {
+        width: 130px;
+        padding-left: 30px;
+    }
+
+    .contact {
+        position: relative;
+        top: -300px;
+        padding-right: 30px;
+    }
+    .contact img {
+        width: 100px;
+        padding-bottom: 0;
+    }
+    #main2 .contact span {
+        font-size: 25px;
+    }
+    .contact div {
+        padding-top: 5px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        font-size: 15px;
+    }
+    #end {
+        margin: 0px 20px 10px 20px;
+        padding: 5px 10px;
+        font-size: 13px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .head {
+        font-size: 28px;
+        margin: 35px 0 20px 0;
+    }
+    .product {
+        padding: 0px 25px 20px 25px;
+    }
+ 
+    .title {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .title span {
+        font-size: 18px;
+    }
+    .img-container {
+        margin: 0;
+        
+    }
+    .box-img{
+        padding: 10px 0;
+    }
+    .image-img div img {
+        height: 150px;
+    }
+    .button {
+        display: none;
+    }
+
+    .img-container img {
+        /* height: 120px; */
+        width: 250px;
+    } 
+    .product-img {
+        width: fit-content;
+        height: auto;
+        margin: 0px 10px;
+    }
+    .block-assign {
+        padding: 15px 10px 25px;
+        font-size: 15px;
+        width: fit-content;
+        letter-spacing: normal;
+    }
+    .click a {
+        padding: 5px 18px;
+    }
+    video {
+        width: 260px;
+        height: 180px;
+    }
+    .other-image img {
+        width: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    #header {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .header {
+        padding: 0 10px 0 15px;
+        letter-spacing: 1px;
+        font-size: 23px;
+    }
+    .headermenu a {
+        margin: 0 4px;
+        position: relative;
+        top: -2px;
+    }
+    #main1 img {
+        width: 260px;
+        margin-top: 30px;
+        border-radius: 30px 120px 30px 100px;
+    }
 }
