@@ -269,7 +269,7 @@ button {
 }
 
 .resume img {
-    width: 50%;
+    width: 1080px;
 }
 
 /* work */
@@ -664,6 +664,9 @@ video {
         padding-top: 18px;
         line-height: 30px;
     }
+    .resume img {
+        width: 720px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -821,6 +824,9 @@ video {
         padding-top: 15px;
         line-height: 26px;
         font-size: 18px;
+    }
+    .resume img {
+        width: 540px;
     }
 }
 
@@ -988,6 +994,9 @@ video {
     }
     .other-image img {
         width: 180px;
+    }
+    .resume img {
+        width: 350px;
     }
 
 }
