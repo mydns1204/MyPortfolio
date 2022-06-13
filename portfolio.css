@@ -361,7 +361,7 @@ button {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
-    width: fit-content;
+    /* width: fit-content; */
 
 }
 
@@ -411,16 +411,17 @@ video {
 .image-img {
     flex: 0 0 auto;
     margin: 0px 10px;
+
 }
 
 .image-img div img {
     align-items: center;
-    width: fit-content;
+    width: auto;
 
 }
 
 .image-img img {
-    height: 500px;
+    max-height: 500px;
     /* height: 100%; */
 }
 
@@ -435,6 +436,7 @@ video {
     align-items: center;
     border-left: none;
     border-right: none;
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -965,6 +967,7 @@ video {
         width: 250px;
     } 
     .product-img {
+        flex: 0 0 auto;
         width: fit-content;
         height: auto;
         margin: 0px 10px;
