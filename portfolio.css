@@ -213,7 +213,6 @@ button {
     z-index: 1;
     color: #000;
     height: fit-content;
-    z-index: -1;
 }
 
 .contact div {
@@ -233,16 +232,19 @@ button {
 }
 
 .contact a {
-    color: #000;
+    color: rgb(0, 0, 0);
+    
+    
 }
 
 .contact a:hover {
-    font-weight: 500;
+    color: #40a3c1;
+    text-decoration: underline;
 }
 
 /* END */
 #end a:hover {
-    font-weight: 500;
+    text-decoration: underline;
 }
 
 #end {
@@ -359,10 +361,8 @@ button {
     border-bottom-right-radius: 20px;
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
     letter-spacing: 1px;
     /* width: fit-content; */
-
 }
 
 .block-assign img {
@@ -370,7 +370,7 @@ button {
 }
 
 .block-assign span {
-    font-weight: 400;
+    color: rgb(110, 110, 110);
 }
 
 .click {
@@ -401,17 +401,19 @@ video {
 .nonclick {
     visibility: hidden;
 }
-
+.other-image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .other-image img {
     width: 360px;
     text-align: center;
-
 }
 
 .image-img {
     flex: 0 0 auto;
     margin: 0px 10px;
-
 }
 
 .image-img div img {
@@ -559,7 +561,7 @@ video {
     }
 
     .title span {
-        font-size: 28px;
+        font-size: 23px;
     }
 
 
@@ -646,7 +648,7 @@ video {
     }
 
     #main2 .hobby img {
-        width: 190px;
+        width: 200px;
         padding-left: 65px;
     }
 
@@ -689,7 +691,7 @@ video {
     }
 
     .title span {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .img-container {
@@ -784,7 +786,7 @@ video {
     }
 
     .hobby {
-        padding: 50px 50px 190px 60px;
+        padding: 50px 50px 250px 60px;
     }
 
     .hobby div {
@@ -893,7 +895,7 @@ video {
         line-height: 22px;
     }
     .hobby {
-        padding: 45px 40px 200px 40px;
+        padding: 45px 40px 225px 40px;
     }
     .hobby div {
         padding-top: 5px;
@@ -902,7 +904,7 @@ video {
     }
     #main2 .hobby img {
         width: 130px;
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     .contact {
@@ -945,7 +947,7 @@ video {
         margin: 15px 0;
     }
     .title span {
-        font-size: 18px;
+        font-size: 13px;
     }
     .img-container {
         margin: 0;
