@@ -401,19 +401,22 @@ video {
 .nonclick {
     visibility: hidden;
 }
-.other-image{
+.other-image {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+    text-align: center;
+} 
+
 .other-image img {
     width: 360px;
     text-align: center;
+    margin-right: 2px;
 }
 
 .image-img {
     flex: 0 0 auto;
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .image-img div img {
@@ -723,7 +726,10 @@ video {
     }
 
     .other-image img {
+        display: flex;
         width: 240px;
+        align-items: center;
+
     }
 
     .space {
