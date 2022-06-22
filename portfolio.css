@@ -828,34 +828,20 @@ video {
         width: 540px;
     }
 }
-
-@media only screen and (max-width: 479px),(max-width: 425px) {
+@media only screen and (max-width: 644px){
     #header {
-        font-size: 23px;
+        font-size: 28px;
     }
     .header {
         padding: 0 20px;
         letter-spacing: 2.5px;
-        font-size: 23px;
     }
     .headermenu a {
-        font-size: 13px;
+        font-size: 16px;
         padding: 0px 0px;
         margin: 0 5px;
         position: relative;
-        top: -2px;
-    }
-    #main1 {
-        padding-top: 60px;
-    }
-    #main1 span {
-        font-size: 30px;
-        letter-spacing: 2.5px;
-    }
-    #main1 img {
-        width: 300px;
-        margin-top: 30px;
-        border-radius: 30px 150px 30px 100px;
+        top: -3px;
     }
     .curved {
         position: relative;
@@ -931,6 +917,109 @@ video {
         line-height: 22px;
         font-size: 15px;
     }
+}
+@media only screen and (max-width: 487px),(max-width: 425px) {
+    #header {
+        font-size: 23px;
+    }
+    .header {
+        padding: 0 20px;
+        letter-spacing: 2.5px;
+        font-size: 23px;
+    }
+    .headermenu a {
+        font-size: 13px;
+        padding: 0px 0px;
+        margin: 0 5px;
+        position: relative;
+        top: -2px;
+    }
+    #main1 {
+        padding-top: 60px;
+    }
+    #main1 span {
+        font-size: 30px;
+        letter-spacing: 2.5px;
+    }
+    #main1 img {
+        width: 300px;
+        margin-top: 30px;
+        border-radius: 30px 150px 30px 100px;
+    }
+    /* .curved {
+        position: relative;
+        bottom: -35px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    .curved svg {
+        width: calc(300% + 1.3px);
+        height: 400px;
+    }
+    #main2 {
+        font-size: 15px;
+        height: 1150px;
+    }
+    #main2 span {
+        font-size: 25px;
+    }
+    .aboutme {
+        padding: 0 40px 0 30px;
+        position: relative;
+        top: -10px;
+    }
+    .aboutme div {
+        padding: 5px 0 0 0;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    .skills {
+        padding: 30px 30px 0px 40px;
+    }
+
+    #main2 .skills img {
+        width: 120px;
+        padding-left: 25px;
+    }
+
+    .skills-data div {
+        padding-top: 5px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    .hobby {
+        padding: 45px 40px 225px 40px;
+    }
+    .hobby div {
+        padding-top: 5px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    #main2 .hobby img {
+        width: 130px;
+        padding-left: 20px;
+    }
+
+    .contact {
+        position: relative;
+        top: -300px;
+        padding-right: 30px;
+    }
+    .contact img {
+        width: 100px;
+        padding-bottom: 0;
+    }
+    #main2 .contact span {
+        font-size: 25px;
+    }
+    .contact div {
+        padding-top: 5px;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        font-size: 15px;
+    } */
     #end {
         margin: 0px 20px 10px 20px;
         padding: 5px 10px;
@@ -1024,7 +1113,7 @@ video {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 363px) {
     #header {
         font-size: 20px;
         padding-right: 10px;
